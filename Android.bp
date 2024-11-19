@@ -20288,6 +20288,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libqdMetaData",
+                "libgrallocutils",
                 "android.hardware.graphics.common@1.2",
                 "libpwirisIoctlWrapper",
                 "libpwirispq",
@@ -20315,7 +20316,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     device_specific: true,
 }
@@ -21895,7 +21895,9 @@ cc_prebuilt_binary {
                 "libqdMetaData",
                 "libdisplaydebug",
                 "libsdmutils",
+                "libgrallocutils",
                 "libui",
+                "libgpu_tonemapper",
                 "libEGL",
                 "libGLESv2",
                 "libGLESv3",
@@ -21923,7 +21925,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     strip: {
         none: true,
     },
